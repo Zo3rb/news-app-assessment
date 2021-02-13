@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+
+// Internal Imports
+import { MainEvent, HomeNewsList } from '../components';
 
 const HomePage = () => {
     return (
-        <div>
-            Hello World From Home Page
-        </div>
+        <Fragment>
+            <div className="container" style={{ padding: "50px 0" }}>
+                <MainEvent />
+            </div>
+            <div className="container">
+                <HomeNewsList />
+            </div>
+        </Fragment>
     );
 }
 

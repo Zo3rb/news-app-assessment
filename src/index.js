@@ -5,6 +5,7 @@ import App from './App'; // The Application Starting Point
 // External Imports
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Internal Imports
 import reduxStore from './redux/reduxStore';

@@ -4,13 +4,15 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 // Internal Imports
-import { HomePage, AboutPage } from './pages';
+import { HomePage, Page404, AllNewsPage, SingleNewPage } from './pages';
 
 const AppRouter = () => {
     return (
         <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route exact path="/about" component={AboutPage} />
+            <Route exact path="/news" component={AllNewsPage} />
+            <Route exact path="/news/:id" component={SingleNewPage} />
+            <Route component={Page404} />
         </Switch>
     );
 }
